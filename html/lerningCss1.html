@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Learning CSS </title>
+
+  <style>
+    .css1 {
+      color:green;
+      font-size:80%;
+    }
+    .css2 {
+      color:blue;
+      background-color:orange;
+      padding:5px;
+      width:105px;
+    }
+
+    .css3 {
+      color:brown;
+    }
+
+    .css4 {
+      font-size:150%;
+    }
+
+    .css5 {
+      color:#800080;
+    }
+
+    .css6 {
+      color:#808000;
+      font-size:150%;
+    }
+
+    #css7 {
+      color:#E74C3C;
+      Font-size:150%;
+    }
+
+    .test1 {
+      color:#F1C40F;
+      background-color:#34495E;
+      width:225px;
+      padding:10px;
+    }
+
+    .test2{
+      background-color:#C39BD3;
+      padding:10px;
+    }
+
+    .test3 {
+      background-color:#58D68D;
+      padding:5px;
+      width:45px;
+    }
+
+    .test4 {
+      color:#2E4053;
+    }
+
+    .test5 {
+      color:#7E5109;
+    }
+
+    .test6 {
+      height:50px;
+      position:relative;
+      top:20px;
+      background-color:#17202A;
+    }
+
+    .test7 {
+      position:relative;
+      top:15px;
+      left:40px;
+    }
+
+    .test8 {
+      position:relative;
+      top:-21px;
+      left:1172px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+<h1> Learning The In Line CSS & Internal CSS </h1>
+
+<ul>
+  <p>&nbsp; &nbsp; &nbsp; <li class="test2">When setting INTERNAL CSS sections it is Style Open Tag &lt; Style &gt; One and Style Close Tag &lt; /Style &gt; should be set between the two.</li></p>
+</ul>
+<h2 class="test4">In line CSS </h2>
+
+<P class="test2"> In Line CSS is the part of CSS included in the HTML code itself
+  It should be done in the following way. Also, in order for the CSS prepared here to work, the STYLE TAG should be used in the following manner.</p>
+
+<p>Ex:<br><br> &nbsp; &nbsp; &lt; p style = "color:red font-size:80%; " &gt; In line CSS &lt; /p &gt; </p>
+<p class="test3"> Result:</p>
+<p style="color:red; font-size:80%;"> In line CSS </p>
+
+
+
+
+<h2 class="test4">Internal CSS</h2>
+
+<P class="test2">Internal CSS is to enter the CSS section in the HEAD TAG as follows according to the HTML code.</p>
+
+<p>Ex:<br><br> &lt; style &gt; <br> &nbsp; &nbsp; p {<br> &nbsp;&nbsp;&nbsp; &nbsp; color:green;<br> &nbsp;&nbsp;&nbsp; &nbsp; font-size:80%;<br> &nbsp; &nbsp; } <br> &lt; /style &gt; </p>
+
+<div class="test2">
+  <p> Here every CSS you set should be between STYLE OPEN TAG( &lt; style &gt; ) and STYLE CLOSE TAG ( &lt /style &gt; ).</p>
+  <p> CSS can be typed anywhere in relation to HTML and as a standard it is included in the HEAD TAG. </P>
+</div>
+
+<p class="test3">Result:</p>
+<p class="css1">Internal CSS </p>
+
+
+
+
+
+<h1>Learning The Class & ID </h1>
+
+<h2 class="test4">Class</h2>
+
+<p class="test2">A CLASS can be entered multiple times in the same PAGE, and several CLASSES can be added to the same HTML TAG. These methods can be explained by the following examples.</P>
+
+<p>Ex 01: <br><br> &nbsp; &nbsp; &lt; p class = " Type Class Name " &gt; Class Example &lt; /p &gt; </p>
+<p class="test3">Result:</p>
+
+<p class ="css2"> Class Example </p>
+<p class="test5">The CSS related to this CLASS should be entered between HEAD OPEN TAG ( &lt; head &gt; ) and HEAD CLOSE TAG (&lt; /head &gt; ) as follows.</p>
+
+<p>Ex: <br> <br> &nbsp; &nbsp; .css2 { <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color:blue; <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color:orange; <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; padding:5px; <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; width:105px; <br> &nbsp; &nbsp; } </p>
+
+<P>Ex 02: <br><br> &nbsp; &nbsp; &lt; p class = " Type 1st Class Name   Type 2nd Class Name ; " Class Example &lt; /p &gt; </p>
+
+<p class="test3">Result:</p>
+<p class="css3 css4">Class Example</p>
+
+<p class="test5">Below is the section of CSS related to Ex 02.</p>
+<p>Ex:<br><br> &nbsp; &nbsp; .css3 { <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color:brown;  <br> &nbsp; &nbsp; } </p>
+<p> &nbsp; &nbsp; .css4 { <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; font-size:150%; <br> &nbsp; &nbsp; } </p>
+
+
+<p class="test2">After using a CLASS for an HTML TAG in CSS, when creating the corresponding CSS section, dot &nbsp; in front of the CLASS NAME used in the HTML TAG. Appending a &nbsp;(.) is mandatory. When a PHARAGRAPH TAG has not been CLSSed, changes can be made to all PHARAGRAPH TAGs that have not been CLASSED at once. When writing a CSS to the PHARAGRAPH TAG that is not CLASSED
+  No need to apply a dot on the front.</P>
+<P>Ex:<br><br> &nbsp; &nbsp; p { <br> &nbsp;&nbsp;&nbsp; &nbsp; color:red; <br> &nbsp;&nbsp;&nbsp; &nbsp; background-color:grey; <br> &nbsp; &nbsp; }
+
+
+<h2 class="test4">How to make changes to a reselected section of a CSS section set using the SPAN TAG. </h2>
+
+<P>Ex: <br><br> &nbsp; &nbsp; &lt; p class = " css5 " &gt; Example The &lt; span class = "css6" &gt; Span Tag &lt; /span &gt; &lt; /p &gt; </p>
+
+<p class="test3">Result:</p>
+<p class="css5"> Example The <span class="css6"> Span Tag </span> </p>
+
+<p class="test5">Below is the CSS section related to the SPAN TAG.</p>
+<P>Ex: <br> <br> &nbsp; &nbsp; .css5{ <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:#800080; <br> &nbsp; &nbsp;} </p>
+<p>Ex: <br> <br> &nbsp; &nbsp; .css6{ <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:#808000; <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size:150%; <br>&nbsp; &nbsp;} </p>
+
+
+
+
+<h2 class="test4"> ID </h2>
+
+<p class="test2"> An ID can be used only once per PAGE.</p>
+<p>Ex: <br><br> &nbsp; &nbsp; &lt; p ID = " css7 " &gt; ID Example &lt; /p &gt; </p>
+
+<p class="test3">Result:</p>
+<p id="css7"> ID Example </p>
+<p class="test5">The CSS section related to this is shown below.</p>
+
+<p>Ex:<br><br> &nbsp; &nbsp; #css7{ <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color : #E74C3C; <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size : 150%; <br> &nbsp; &nbsp;} </p>
+<p class="test2">When using an ID, it is mandatory to prefix the CSS NAME with a ( # ) symbol when writing the CSS section.</p>
+
+
+
+
+<h1> Explain DIV Tag </h1>
+
+<p class="test2">This is used if you want to make the same changes to several HTML TAGS at the same time. It is used as follows.</p>
+
+<P>Ex:<br> <br> &nbsp; &nbsp; &lt; div class = " test1 "&gt; <br> &nbsp; &nbsp; &nbsp; &nbsp; &lt; p &gt; DIV Tag Explain &lt; /p &gt; <br> &nbsp; &nbsp; &nbsp; &nbsp; &lt; p &gt; DIV Tag Example &lt; /p &gt; <br> &nbsp; &nbsp; &nbsp; &nbsp; &lt; p &gt; DIV Tag &lt; /p &gt; <br> &nbsp; &nbsp; &lt; /div &gt; </p>
+
+<p class="test3">Result:</p>
+<div class ="test1">
+  <p>DIV Tag Explain </p>
+  <p>DIV Tag Example </p>
+  <p>DIV Tag </p>
+</div>
+
+<p class="test5"> Below is the CSS section related to the above DIV TAG.</p>
+
+<p>Ex:<br><br> &nbsp; &nbsp; .test1 { <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color:#F1C40F; <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color:#34495E; <br>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width:225; <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding:10px; <br> &nbsp; &nbsp; } </p>
+
+<div class="test6">
+  <div class="test7">
+    <a href="htmlEntities.html"><input type="submit" value="Previous page"></a>
+    <div class="test8"><a href ="lerningCss2.html"><Input type ="submit" value="Next Page"></a></div>
+  </div>
+</div>
+</body>
+</html>

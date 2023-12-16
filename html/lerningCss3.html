@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>position css</title>
+  <style>
+
+    .posr {
+      position:relative;
+      top:5px;
+      left:5px;
+      color:red;
+    }
+
+    .posa {
+      position:relative;
+      top:5px;
+      left:5px;
+      color:red;
+    }
+
+    .posf {
+      position:fixed;
+      top:450px;
+      left:10px;
+      background-color:yellow;
+      width:250px;
+      color:green;
+      padding:8px;
+    }
+
+    .des1 {
+      height:50px;
+      position:relative;
+      top:20px;
+      background-color:#17202A;
+    }
+
+    .des2 {
+      position:relative;
+      top:15px;
+      left:40px;
+    }
+
+    .des3 {
+      position:relative;
+      top:-21px;
+      left:1172px;
+    }
+
+    .test1 {
+      background-color:#48C9B0;
+      width:1000px;
+      margin-left:135px;
+      padding:25px;
+    }
+
+    .res {
+      background-color:#AEB6BF;
+      width:45px;
+      padding:5px;
+    }
+
+    h2 {
+      color:#D35400;
+      margin-left:80px;
+    }
+
+    h1 {
+      color:#641E16;
+      margin-left:500px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<h1>Learning Position CSS</h1>
+
+<p>There are 03 types of positions.</p>
+
+<ul>
+  <li>Fixed</li>
+  <li>Relative</li>
+  <li>Absolute</li>
+</ul>
+
+<h2>Fixed Position</h2>
+<ul class="test1">
+  <li><p>Here we can use this FIXED POSITION if we want to keep only the required part of the WEB PAGE in a vertical position without moving it down or up.</p></li>
+</ul>
+
+<P>Ex: <br><br> &nbsp; &nbsp;  &lt; p class = " posf " Fixed Position css &lt; /p &gt; </p>
+<p class="res">Result:</p>
+<p class="posf"> Fixed Position Example </p>
+
+<br><br>
+<p>Below is the corresponding CSS section.</p>
+<p>&nbsp; &nbsp; .posf { <br> &nbsp; &nbsp; &nbsp; &nbsp; position:fixed; <br> &nbsp; &nbsp; &nbsp; &nbsp; top:630px; <br> &nbsp; &nbsp; &nbsp; &nbsp; left:5px; <br> &nbsp; &nbsp; &nbsp; &nbsp; background-color:yellow; <br> &nbsp; &nbsp; &nbsp; &nbsp; width:250px; <br> &nbsp; &nbsp; &nbsp; &nbsp; color:green; <br> &nbsp; &nbsp; &nbsp; &nbsp; padding:8px; <br> &nbsp; &nbsp; }
+
+<h2>Relative Position</h2>
+
+<ul class="test1">
+  <li><p>Here, when giving a RELATIVE POSITION, its POSITION is decided by the computer in comparison to what is set above the part that is expected to give the RELATIVE POSITION.</p></li>
+</ul>
+
+<P> Ex: <br><br> &nbsp; &nbsp;  &lt; p class = " posr " &gt; Relative Position css &lt; /p &gt; </p>
+<p class="res">Result:</p>
+<p class="posr"> Relative Position Example </p>
+<br>
+<p>Below is the corresponding CSS section.</p>
+
+<p>&nbsp; &nbsp; .posr { <br> &nbsp; &nbsp; &nbsp; &nbsp; position:relative; <br> &nbsp; &nbsp; &nbsp; &nbsp; top:5px; <br> &nbsp; &nbsp; &nbsp; &nbsp; left:5px; <br> &nbsp; &nbsp; &nbsp; &nbsp; color:red; <br> &nbsp; &nbsp; }  </p>
+
+<h2>Absolute Position</h2>
+
+<ul class="test1">
+  <li><p>When performing an ABSOLUTE POSITION, the computer obtains its POSITION relative to the TOP MARGIN and LEFT MARGIN of the WEB PAGE.</p></li>
+</ul>
+
+<p>Ex: <br><br> &nbsp; &nbsp;  &lt; p class = " posa " Absolute Position css &lt; /p &gt; </p>
+<p class="res">Result:</p>
+<p class="posa"> Absolute Position Example </p>
+<br>
+<p>The corresponding CSS section is shown below.</p>
+<p>Ex: <br><br> &nbsp; &nbsp; .posa { <br> &nbsp; &nbsp; &nbsp; &nbsp; position:absolute; <br> &nbsp; &nbsp; &nbsp; &nbsp; top:1240px; <br> &nbsp; &nbsp; &nbsp; &nbsp; left:10px; <br> &nbsp; &nbsp; &nbsp; &nbsp; color:red; <br> &nbsp; &nbsp; } </p>
+
+<div class="des1">
+  <div class="des2">
+    <a href="lerningCss2.html"><button>Previous Page</button></a>
+    <div class="des3"><a href="lerningCss4.html"><button>Next Page</button></a></div>
+  </div>
+</div>
+</body>
+</html>

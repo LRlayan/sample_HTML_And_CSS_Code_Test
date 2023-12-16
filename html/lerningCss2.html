@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>float</title>
+  <style>
+    .sec1 {
+      background-color:#1ABC9C;
+      width:350px;
+      padding:12px;
+      float:left;
+    }
+
+    .sec2 {
+      float:left;
+    }
+
+    .sec3 {
+      background-color:#5499C7;
+      width:350px;
+      padding:12px;
+      float:right;
+    }
+
+    .sec5 {
+      float:right;
+      margin-right:40px;
+
+    }
+
+    .sec9 {
+      clear:both;
+    }
+
+    .sec6 {
+      float:left;
+    }
+
+    .sec7 {
+      float:right;
+      margin-right:110px;
+    }
+
+    .sec8 {
+      clear:both;
+    }
+
+    .sec10{
+      clear:both;
+      height:50px;
+      position:relative;
+      top:20px;
+      background-color:#17202A;
+    }
+
+    .sec11{
+      position:relative;
+      top:15px;
+      left:40px;
+
+    }
+
+    .sec12{
+      position:relative;
+      top:-21px;
+      right:3px;
+      left:1172px;
+    }
+
+    h1 {
+      color:#641E16;
+      margin-left:500px;
+    }
+
+    .test {
+      background-color:#EC7063;
+      width:1000px;
+      margin-left:135px;
+      padding:25px;
+    }
+
+
+
+  </style>
+</head>
+
+
+<body>
+
+<h1>Learning The Float CSS</h1>
+
+<ul class="test">
+  <p><li>The CSS FLOAT is used to set the text or something else on the left side of a WEB PAGE. It is explained by following examples.</li></p>
+</ul>
+
+<div class="sec6">
+  <p>Ex 01:<br><br> &nbsp; &nbsp; &lt; p class = " sec1 " &gt; Left Float &lt; /p &gt; </p>
+  <p>Result:</p>
+</div>
+
+<div class="sec7">
+  <p>Ex 02:<br><br> &nbsp; &nbsp; &lt; p class = " sec3 " &gt; Right Left &lt; /p &gt; </p>
+  <p>Result:</p>
+</div>
+
+<div class="sec8">
+  <P class="sec1">Left Float </p>
+
+  <p class="sec3">Right Float</p>
+</div>
+
+<div class="sec9">
+  <ul class="test">
+    <p><li>Here, after setting the LEFT FLOAT and the RIGHT FLOAT, the empty space left between the two FLOATs will be entered into that empty space. Otherwise, if you want the typed part to be DISPLAY below LEFT and RIGHT FLOAT, you should follow the HTML part and CSS part below.</li></p>
+  </ul>
+  <p>Ex:<br><br> &nbsp; &nbsp; &lt; p class = " sec9 " Type Your Pharagraph &lt; /p &gt;</p>
+  <p>Ex:<br><br> &nbsp; &nbsp; .sec9 { <br> &nbsp; &nbsp; &nbsp; &nbsp; clear: both; <br> &nbsp; &nbsp; } </p>
+  <ul class="test">
+    <p><li>In the above CSS clear:both; What is meant is that the LEFT and RIGHT FLOAT set above the paragraph typed below the LEFT and RIGHT FLOAT should be typed CLEAR. Then the TYPE section can be written as a single paragraph. </li><br><br><li>Here the CSS should be written in the section where LEFT RIGHT FLOAT should be removed. That is, to the paragraph typed below LEFT and RIGHT FLOAT. There, sec9 is the CLASS NAME related to that CSS. </li> <br> <br><li> If you want to remove only one of LEFT and RIGHT FLOAT, clear:left; and clear:right; Only the FLOAT you want to remove should be TYPED in the corresponding field </li> </p>
+  </ul>
+</div>
+
+<div class="sec2">
+
+  <p>Below is the CSS section related to Left Float.</p>
+  <p>Ex 01:<br><br>&nbsp; &nbsp; .sec1 { <br> &nbsp; &nbsp; &nbsp; &nbsp; background-color:#F1948A; <br> &nbsp; &nbsp; &nbsp; &nbsp; width:15px; <br> &nbsp; &nbsp; &nbsp; &nbsp; padding:5px; <br> &nbsp; &nbsp; &nbsp; &nbsp; float:right; <br> &nbsp; &nbsp; }
+</div>
+
+<div class="sec5">
+  <p>The CSS section related to Right Float is shown below.</p>
+  <p>Ex 02:<br><br> &nbsp; &nbsp; .sec5 { <br> &nbsp; &nbsp; &nbsp; &nbsp; background-color:#5499C7; <br> &nbsp; &nbsp; &nbsp; &nbsp; width:350px; <br> &nbsp; &nbsp; &nbsp; &nbsp; padding:12px; <br> &nbsp; &nbsp; &nbsp; &nbsp; float:right; <br> &nbsp; &nbsp; }
+</div>
+
+<div class="sec10">
+  <div class="sec11">
+    <a href="lerningCss1.html"><input type="submit" value="Previous Page"></a>
+    <div class="sec12"><a href="lerningCss3.html"><input type="submit" value="Next Page"></a></div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
